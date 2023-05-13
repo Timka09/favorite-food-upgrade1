@@ -1,0 +1,109 @@
+
+.card{
+  border:solid green 5px ;
+  width: 350px;
+  height: 500px;
+  position: relative;
+}
+.card1{
+  gap:10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body{
+background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 6%, rgba(141,46,185,1) 30%, rgba(231,80,129,1) 54%, rgba(181,22,151,1) 71%, rgba(49,189,169,1) 97%);
+}
+.pages{
+display: flex;
+justify-content: space-around;
+list-style: none;
+}
+.pages-link{
+  font-family: 'Sigmar', cursive;
+  text-decoration: none;
+  text-shadow: 3px 1px 3px black;
+  font-size: 36px;
+}
+.box-style {
+  border: 7px solid rgb(0, 0, 0);
+  width: 800px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: radial-gradient(
+    circle at center,
+    black,
+    blueviolet,
+    blue,
+    violet,
+    skyblue,
+    white
+  );
+  padding-top: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transform: rotate3d(1, 1, 1, 0deg);
+  transition: transform 1s 250ms;
+}
+
+.box-style:hover{
+  transform: rotate3d(1, 1, 1, 70deg);
+}
+
+.main-photo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+
+}
+
+.main-text {
+  font-size: 42px;
+  color: black;
+  text-indent: 25px;
+}
+
+.main-title {
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 7px rgb(0, 0, 0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(173, 255, 47, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.7s linear ;
+}
+
+.card:hover .overlay{
+  opacity: 1;
+}
+
+.card:hover{
+border-color: blue;
+box-shadow: 1px 2px 8px 5px purple;
+} 
+
+.pages-item:hover{
+  transform: rotate(360deg);
+  transform: scale(1.25);
+}
+
+button{
+  color: brown;
+  border: none;
+}
